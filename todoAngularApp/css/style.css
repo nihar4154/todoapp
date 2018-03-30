@@ -1,0 +1,165 @@
+body{
+	background-color:#E4E4E4;
+	font-family:arial,sans-serif;
+	font-size:14px;
+	color:#333;
+}
+
+h1{
+	color:#FFF;
+	text-align:center;
+	background-color:#52CEB7;
+	font-weight:bold;
+	padding:10px 0;
+	margin:0;
+}
+
+ul{
+	list-style-type:none;
+}
+.bold{
+	font-weight:bold;
+}
+.light-gray{
+	color:#EEE;
+}
+.red{
+	color:red;
+}
+.light-red{
+	color:#D8838D;
+}
+.green{
+	color:#5FEF37;
+}
+
+/* App */
+#todo-app{
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+	
+	margin:20px auto 0 auto;
+	max-width:600px;
+}	
+
+/* Nav */
+#menu{
+	background-color:#74D9C7;
+	color:#FFF;
+	margin:0px;
+	padding:5px 0;
+}
+#menu ul{
+	margin:0px;
+	padding:5px 0px;
+	text-align:center;
+}
+#menu li{
+	display:inline;
+}
+#menu a{
+	color:#FFF;
+	padding:5px;
+	border-radius:3px;
+	background-color:#6BBEAF;
+}
+#menu a:hover{
+	text-decoration:none;
+	background-color:#8EC3BA;
+}
+#menu a .glyphicon{
+	margin:0 6px 0px 0;
+}
+
+/* ToDo List */
+ul#todo-list{
+	margin:0px;
+	padding:0px 0px;
+}
+ul#todo-list li{
+	padding:0px 10px;
+	position:relative;
+}
+ul#todo-list li.no-task{
+	height:40px;
+	text-align:center;
+	line-height:40px;
+}
+ul#todo-list li input, ul#todo-list li label{
+	margin:10px 0px;
+}
+ul#todo-list li input{
+	position:absolute;
+	top:3px;
+	left:10px;
+}
+ul#todo-list li label{
+	padding-left:30px;
+	float:left;
+	width:70%;
+}
+ul#todo-list li.odd{
+	background-color:#FFF;
+}
+ul#todo-list li.even{
+	background-color:#F7F7F7;
+}
+ul#todo-list li .btn-remove{
+	border:0px solid #FFF;
+	background:transparent;
+	color:#BBB;
+	padding:10px 10px;
+	float:right;
+	width:30%;
+}
+ul#todo-list li .btn-remove:hover{
+	background-color:#EEE;
+	color:#666;
+}
+
+/* ToDo Form */
+#add-task-form{}
+#add-task-form .form-group{
+	margin:0px;
+	width:100%;
+}
+#add-task-form input{
+	float:left;
+	width:70%;
+	border-radius:0px;
+}
+#add-task-button{
+	background-color:#f46547;
+	height:34px;
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+	color:#FFF;
+	border:0px solid #FFF;
+	float:right;
+	width:30%;
+}
+#add-task-button:hover{
+	background-color:#F47358;
+}
+#add-task-button span{
+	margin-right:5px;
+}
+
+/* Task counter */
+#task-counter{
+	font-size:12px;
+	color:#888;
+	padding:5px 10px;
+	background-color:#CCC;
+}
+
+
+
+@media (max-width: 468px) {
+	ul#todo-list li .btn-remove{
+		font-size:10px;
+	}
+}

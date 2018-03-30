@@ -1,0 +1,8 @@
+com/todos/main/Application.class
+com/todos/main/service/ToDoService.class
+com/todos/main/RestControllerAspect.class
+com/todos/main/dao/jpa/ToDoRepository.class
+com/todos/main/api/rest/SimpleCORSFilter.class
+com/todos/main/api/rest/ToDosController.class
+com/todos/main/Application$1.class
+com/todos/main/domain/ToDo.class

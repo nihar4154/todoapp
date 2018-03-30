@@ -1,0 +1,23 @@
+<ul id="todo-list">
+	<task-decorate ng-repeat="task in filteredTasks= (tasks | filter:{isDone:status})"></task-decorate>
+	<li ng-hide="filteredTasks.length" class='odd no-task text-warning'>There is no task</p>
+</ul>
+
+<form id="add-task-form" class="form-inline">
+	<div class="form-group">
+		<input type="text" name="taskContent" ng-model="task.content" value="{{task.content}}" placeholder="Add a task" class="form-control"/>
+		<button ng-click="addTask(task)" id="add-task-button"><span class="glyphicon glyphicon-plus"></span>Add</button>
+		<div class="clearfix"></div>
+	</div>
+</form>
+
+<div ng-repeat="item in toDoArray = (tasks | filter:{isDone:false})"></div>
+<footer id="task-counter">
+	<span ng-show="toDoArray.length">
+		<span class="bold">Tasks :</span> {{ toDoArray.length }} / {{ tasks.length }}
+	</span>
+	<span ng-hide="toDoArray.length">
+		<span class="bold">Well done</span>
+	</span>
+</footer>
+

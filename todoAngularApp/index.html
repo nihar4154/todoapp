@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToDoList || AngularJS - Démo</title>
+  <link href='bower_components/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <link href='css/style.css' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="toDoList">
+	
+	<!--CONTAINER-->
+	<div class="container">
+		<section id="todo-app">
+			<h1>Angular ToDoList</h1>
+			<nav id="menu">
+				<ul>
+					<li>
+						<a href='#/all'><span class="glyphicon glyphicon-th-list light-gray"></span>All tasks</a>
+					</li>
+					<li>
+						<a href='#/tasks/toDo'><span class="glyphicon glyphicon-remove red"></span>To do</a>
+					</li>
+					<li>	
+						<a href='#/tasks/complete'><span class="glyphicon glyphicon-ok green"></span>Complete</a>
+					</li>
+				</ul>
+			</nav>
+			<!--AngularView-->
+			<div ng-view></div>
+		</section>
+	</div>
+
+	<!--JAVASCRIPT-->
+	<section id="javascript">
+		<!--Vendor-->
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-route/angular-route.min.js"></script>
+
+		<!--App-->
+		<script src="js/angular/app.js"></script>
+		<script src="js/angular/routing.js"></script>
+
+		<!--Controllers-->
+		<script src="js/angular/src/controllers/toDoController.js"></script>
+
+		<!--Provider-->
+		<script src="js/angular/src/services/taskProvider.js"></script>
+
+		<!--Directives-->
+		<script src="js/angular/src/directives/directive.js"></script>
+	</section>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<li ng-class-odd="'odd'" ng-class-even="'even'">
+	<input type="checkbox" name="task_{{task.id}}" id="task_{{task.id}}" ng-checked="{{task.isDone}}" ng-click="updateStatusTask(task)"  />
+	<label for="task_{{task.id}}">{{task.content}}</label>
+	<button ng-click="deleteTask(task,$index)" class="pull-right btn-remove">
+			<span class=" glyphicon glyphicon-trash light-red"></span>
+			Supprimer
+	</button>
+	<div class="clearfix"></div>
+</li>
